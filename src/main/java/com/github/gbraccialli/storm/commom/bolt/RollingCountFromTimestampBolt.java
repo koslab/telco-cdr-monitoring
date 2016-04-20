@@ -11,6 +11,7 @@ import java.util.Map;
 import java.util.Map.Entry;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.regex.Pattern;
+import java.util.TimeZone;
 
 import org.apache.commons.lang.StringUtils;
 import org.apache.log4j.Logger;
@@ -57,6 +58,7 @@ public class RollingCountFromTimestampBolt implements IRichBolt {
 	public RollingCountFromTimestampBolt withTimestampField(String timestampField, String dateFormat){ 
 		this.timestampField = timestampField;
 		this.dateFormat = new SimpleDateFormat(dateFormat);
+		this.dateFormat.setTimeZone(TimeZone.getTimeZone("GMT"));
 		return this;
 	}
 

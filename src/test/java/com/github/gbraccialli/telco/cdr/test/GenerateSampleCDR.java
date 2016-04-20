@@ -13,13 +13,14 @@ public class GenerateSampleCDR {
 
 
 	private static Random rnd = new Random();
-	private static SimpleDateFormat cdrDataFormat = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+	private static SimpleDateFormat cdrDataFormat = new SimpleDateFormat("dd/MM/yyyy'T'HH:mm:ss'Z'");
+
 	private static int numberOfRowsPerInteration = 50;
 	private static long initialTimestamp = 0;
 	//private static long sleepInterval = 1*60*1000;
-	private static long sleepInterval = 60000;
+	private static long sleepInterval = 5000;
 	private static long milisBetweenRows = sleepInterval / numberOfRowsPerInteration;
-	private static String targetFolder = "/root/telco-cdr-monitoring/data";
+	private static String targetFolder = "/opt/telco-cdr-data/";
 
 	final static String[] cellIds = new String[]{ 
 		"cell A",
@@ -77,7 +78,7 @@ public class GenerateSampleCDR {
 	public static void main(String[] args) throws Exception{
 
 		SimpleDateFormat dateFormatWithoutTime = new SimpleDateFormat("dd/MM/yyyy");
-
+                dateFormatWithoutTime.setTimeZone(TimeZone.getTimeZone("GMT"));
 		rnd.setSeed(System.currentTimeMillis());
 
 		//Calendar cal = Calendar.getInstance();
@@ -155,7 +156,7 @@ public class GenerateSampleCDR {
 	}		
 
 	public static String networkChangeRowsPair(long timestmap){
-
+                cdrDataFormat.setTimeZone(TimeZone.getTimeZone("GMT"));
 		String sessionnumber = "change-" + UUID.randomUUID().toString();
 		String simcard = simCards[rnd.nextInt(10)];
 		String phonenumber = phoneNumbers[rnd.nextInt(10)];
@@ -175,7 +176,7 @@ public class GenerateSampleCDR {
 	}
 
 	public static String randomRow(long timestmap){
-
+                cdrDataFormat.setTimeZone(TimeZone.getTimeZone("GMT"));
 		String sessionnumber = "rnd-"+ UUID.randomUUID().toString();
 		String simcard = simCards[rnd.nextInt(10)];
 		String phonenumber = phoneNumbers[rnd.nextInt(10)];
@@ -192,7 +193,7 @@ public class GenerateSampleCDR {
 	}
 
 	public static String dropoffPair(long timestamp, long sequence){
-
+                cdrDataFormat.setTimeZone(TimeZone.getTimeZone("GMT"));
 		String sessionnumber = "drop-" + UUID.randomUUID().toString();
 		String simcard = simCards[rnd.nextInt(10)] + "-" + sequence;
 		String phonenumber = phoneNumbers[rnd.nextInt(10)] + "-" + sequence;
