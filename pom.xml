@@ -24,6 +24,7 @@
     <commons-lang3.version>3.3.2</commons-lang3.version>
     <kafka.version>0.8.2.2.3.2.0-2950</kafka.version>
     <hikari.version>2.2.5</hikari.version>
+    <jetty.version>6.1.26</jetty.version>
   </properties>
 
   <dependencies>
@@ -163,6 +164,25 @@
       <artifactId>HikariCP-java6</artifactId>
       <version>${hikari.version}</version>
       <scope>compile</scope>
+    </dependency>
+
+
+     <dependency>
+      <groupId>org.mortbay.jetty</groupId>
+      <artifactId>jetty</artifactId>
+      <version>${jetty.version}</version>
+    </dependency>
+
+     <dependency>
+      <groupId>org.mortbay.jetty</groupId>
+      <artifactId>jetty-util</artifactId>
+      <version>${jetty.version}</version>
+    </dependency>
+
+     <dependency>
+      <groupId>org.mortbay.jetty</groupId>
+      <artifactId>jetty-sslengine</artifactId>
+      <version>${jetty.version}</version>
     </dependency>
 
   </dependencies>

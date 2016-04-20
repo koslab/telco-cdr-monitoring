@@ -199,7 +199,7 @@
   <classpathentry kind="var" path="M2_REPO/org/apache/hadoop/hadoop-hdfs/2.7.1.2.3.2.0-2950/hadoop-hdfs-2.7.1.2.3.2.0-2950.jar"/>
   <classpathentry kind="var" path="M2_REPO/com/squareup/okhttp/okhttp/2.4.0/okhttp-2.4.0.jar"/>
   <classpathentry kind="var" path="M2_REPO/com/squareup/okio/okio/1.4.0/okio-1.4.0.jar"/>
-  <classpathentry kind="var" path="M2_REPO/org/mortbay/jetty/jetty-util/6.1.26.hwx/jetty-util-6.1.26.hwx.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/mortbay/jetty/jetty-util/6.1.26/jetty-util-6.1.26.jar"/>
   <classpathentry kind="var" path="M2_REPO/io/netty/netty-all/4.0.23.Final/netty-all-4.0.23.Final.jar"/>
   <classpathentry kind="var" path="M2_REPO/xerces/xercesImpl/2.9.1/xercesImpl-2.9.1.jar"/>
   <classpathentry kind="var" path="M2_REPO/xml-apis/xml-apis/1.4.01/xml-apis-1.4.01.jar"/>
@@ -250,7 +250,7 @@
   <classpathentry kind="var" path="M2_REPO/org/apache/hadoop/hadoop-yarn-registry/2.7.1.2.3.2.0-2950/hadoop-yarn-registry-2.7.1.2.3.2.0-2950.jar"/>
   <classpathentry kind="var" path="M2_REPO/org/apache/hadoop/hadoop-mapreduce-client-shuffle/2.7.1.2.3.2.0-2950/hadoop-mapreduce-client-shuffle-2.7.1.2.3.2.0-2950.jar"/>
   <classpathentry kind="var" path="M2_REPO/org/apache/hadoop/hadoop-mapreduce-client-jobclient/2.7.1.2.3.2.0-2950/hadoop-mapreduce-client-jobclient-2.7.1.2.3.2.0-2950.jar"/>
-  <classpathentry kind="var" path="M2_REPO/org/mortbay/jetty/jetty/6.1.26.hwx/jetty-6.1.26.hwx.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/mortbay/jetty/jetty/6.1.26/jetty-6.1.26.jar"/>
   <classpathentry kind="var" path="M2_REPO/commons-daemon/commons-daemon/1.0.13/commons-daemon-1.0.13.jar"/>
   <classpathentry kind="var" path="M2_REPO/org/apache/storm/storm-kafka/0.10.0.2.3.2.0-2950/storm-kafka-0.10.0.2.3.2.0-2950.jar"/>
   <classpathentry kind="var" path="M2_REPO/com/googlecode/json-simple/json-simple/1.1/json-simple-1.1.jar"/>
@@ -409,7 +409,7 @@
   <classpathentry kind="var" path="M2_REPO/org/apache/hbase/hbase-hadoop-compat/1.1.2.2.3.2.0-2950/hbase-hadoop-compat-1.1.2.2.3.2.0-2950.jar"/>
   <classpathentry kind="var" path="M2_REPO/org/apache/commons/commons-math/2.2/commons-math-2.2.jar"/>
   <classpathentry kind="var" path="M2_REPO/org/apache/hbase/hbase-hadoop2-compat/1.1.2.2.3.2.0-2950/hbase-hadoop2-compat-1.1.2.2.3.2.0-2950.jar"/>
-  <classpathentry kind="var" path="M2_REPO/org/mortbay/jetty/jetty-sslengine/6.1.26.hwx/jetty-sslengine-6.1.26.hwx.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/mortbay/jetty/jetty-sslengine/6.1.26/jetty-sslengine-6.1.26.jar"/>
   <classpathentry kind="var" path="M2_REPO/org/mortbay/jetty/jsp-2.1/6.1.14/jsp-2.1-6.1.14.jar"/>
   <classpathentry kind="var" path="M2_REPO/org/mortbay/jetty/jsp-api-2.1/6.1.14/jsp-api-2.1-6.1.14.jar"/>
   <classpathentry kind="var" path="M2_REPO/org/mortbay/jetty/servlet-api-2.5/6.1.14/servlet-api-2.5-6.1.14.jar"/>
