@@ -1,6 +1,6 @@
 scripts/stop_demo.sh
 
-source /root/telco-cdr-monitoring/scripts/ambari_util.sh
+source /opt/telco-cdr-monitoring/scripts/ambari_util.sh
 
 echo '*** Starting Storm....'
 startWait STORM
