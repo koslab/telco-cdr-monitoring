@@ -57,8 +57,8 @@ git clone https://github.com/gbraccialli/telco-cdr-monitoring.git
 
 - **Setup demo**:Run below to setup demo (one time): it will start HBase/Kafka/Storm, install solr, banana and create hive/phoenix tables.
 ```
-chmod -R +x /root/telco-cdr-monitoring/
-cd /root/telco-cdr-monitoring
+chmod -R +x /opt/telco-cdr-monitoring/
+cd /opt/telco-cdr-monitoring
 mvn clean package
 scripts/setup_demo.sh
 ```
@@ -73,29 +73,29 @@ ssh -p 2222 root@localhost
 
 - Start all components:
 ```
-cd /root/telco-cdr-monitoring
+cd /opt/telco-cdr-monitoring
 scripts/start_demo.sh
 ```
 or 
 - Start individual compoments:
   - Flume
   ```
-  cd /root/telco-cdr-monitoring
+  cd /opt/telco-cdr-monitoring
   scripts/start_flume.sh
   ```
   - Storm
   ```
-  cd /root/telco-cdr-monitoring
+  cd /opt/telco-cdr-monitoring
   scripts/start_storm.sh
   ```
   - CDR Producer
   ```
-  cd /root/telco-cdr-monitoring
+  cd /opt/telco-cdr-monitoring
   scripts/start_cdr_producer.sh
   ```
 - To stop Demo, use:
 ```
-cd /root/telco-cdr-monitoring
+cd /opt/telco-cdr-monitoring
 scripts/stop_demo.sh
 ```
 
@@ -122,10 +122,10 @@ scripts/stop_demo.sh
   - telco_cdr_monitoring_phoenix_network_type_change
 
 - Log files
-  - /root/telco-cdr-monitoring/logs/flume.log
-  - /root/telco-cdr-monitoring/logs/producer.log
-  - /root/telco-cdr-monitoring/logs/storm.log
+  - /opt/telco-cdr-monitoring/logs/flume.log
+  - /opt/telco-cdr-monitoring/logs/producer.log
+  - /opt/telco-cdr-monitoring/logs/storm.log
 
 - CDR Files
-  - /root/telco-cdr-monitoring/data
+  - /opt/telco-cdr-monitoring/data
   

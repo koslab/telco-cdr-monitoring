@@ -1,5 +1,5 @@
 #!/bin/bash
-source /root/telco-cdr-monitoring/scripts/user-env.sh
+source /opt/telco-cdr-monitoring/scripts/user-env.sh
 
 function start(){
 curl -u $user:$pass -i -H 'X-Requested-By: ambari' -X PUT -d \
